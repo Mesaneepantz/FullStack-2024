@@ -1,0 +1,30 @@
+{
+  "name": "readwritefile",
+  "version": "1.0.0",
+  "description": "Homework for reading and writing files",
+  "main": "Homework1_1.js",
+  "scripts": {
+    "start:1": "node homework1_1.js",
+    "start:2": "node homework1_2.js",
+    "start:3": "node homework1_3.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mesaneepantz/FullStack-2024.git#main"
+  },
+  "keywords": [
+    "homework",
+    "file",
+    "read",
+    "write"
+  ],
+  "author": "Mesanee Anurit",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mesaneepantz/FullStack-2024/issues"
+  },
+  "homepage": "https://github.com/Mesaneepantz/FullStack-2024/tree/main#readme",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
