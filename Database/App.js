@@ -13,6 +13,20 @@ const pool = mysql.createPool({
   queueLimit: 0,
 });
 
+// ทดสอบผ่าน http://localhost:3000/getQuery?a=1&b=2
+app.get('/getQuery', function (req, res) {
+  console.log(req.query) // JS object
+  res.send(req.query); // JSON
+}
+)
+
+// ทดสอบผ่าน http://localhost:3000/student/3/26
+app.get('/student/:id/:age', function (req, res) {
+  console.log(req.params.id)
+  console.log(req.params.age)
+  res.send(req.params)
+})
+
 // Route to fetch students
 app.get('/students', async (req, res) => {
   try {
